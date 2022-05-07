@@ -1,0 +1,144 @@
+.main {
+    max-width: 1000px;
+    margin: auto;
+  }
+  
+ 
+  
+  .row1 {
+    margin: 10px -16px;
+  }
+  
+  /* Add padding BETWEEN each column */
+  .row1,
+  .row1 > .column {
+    padding: 8px;
+  }
+  
+  /* Create three equal columns that floats next to each other */
+  .column {
+    float: left;
+    width: 33.33%;
+    display: none; /* Hide all elements by default */
+  }
+  
+  /* Clear floats after row1s */ 
+  .row1:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+  
+  /* Content */
+  .content {
+    background-color: white;
+    padding: 10px;
+  }
+  
+  /* The "show" class is added to the filtered elements */
+  .show {
+    display: block;
+  }
+  
+  /* Style the buttons */
+  .btn2 {
+    border: none;
+    outline: none;
+    padding: 12px 16px;
+    background-color: white;
+    cursor: pointer;
+  }
+  
+  .btn2:hover {
+    background-color: #ddd;
+  }
+  
+  .btn2.active1 {
+    background-color: #666;
+    color: white;
+  }
+
+  @media screen and (max-width:600px) {
+    .column {
+   
+        width:50%;
+    
+      }
+      
+  }
+  .container2 {
+    position: relative;
+    /* width: 50%;
+    max-width: 300px; */
+  }
+  
+  .image {
+    display: block;
+    width: 100%;
+    height: auto;
+  }
+  
+  .overlay {
+    position: absolute; 
+    bottom: 0; 
+    background: rgb(0, 0, 0);
+    background: rgba(0, 0, 0, 0.5); /* Black see-through */
+    color: #f1f1f1; 
+    width: 100%;
+    transition: .5s ease;
+    opacity:0;
+    color: white;
+    font-size: 20px;
+    padding: 20px;
+    text-align: center;
+  }
+  
+  .container2:hover .overlay {
+    opacity: 1;
+  }
+
+
+  /* Tab on click  */
+  .accordion {
+    background-color: #eee;
+    color: #444;
+    cursor: pointer;
+    padding: 18px;
+    width: 100%;
+    border: none;
+    text-align: left;
+    outline: none;
+    font-size: 15px;
+    transition: 0.4s;
+  }
+  
+  .activemenu, .accordion:hover {
+    background-color: #ccc;
+  }
+  
+  .accordion:after {
+    content: '\002B';
+    color: #777;
+    font-weight: bold;
+    float: right;
+    margin-left: 5px;
+  }
+  
+  .activemenu:after {
+    content: "\2212";
+  }
+  
+  .panel {
+    padding: 0 18px;
+    background-color: white;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.2s ease-out;
+  }
+ 
+  .bi2{
+    margin: 10px;
+    padding: 10px;
+    background-color: rgb(10, 133, 221);
+    color: white;
+  }
